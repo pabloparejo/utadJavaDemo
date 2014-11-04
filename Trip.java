@@ -1,16 +1,21 @@
 package com.utad.prueba;
 
-import java.util.List;
+import java.util.ArrayList;
 
 import android.util.Log;
 
 public class Trip {
 
 	private String destination;
-	private List<Person> attendees;
+	ArrayList<Person> attendees = new ArrayList<Person>();
 	
 	public Trip(String destinationArg){
 		destination = destinationArg;
+	}
+
+	public Trip(String destinationArg, ArrayList<Person> attendeesArg){
+		destination = destinationArg;
+		attendees = attendeesArg;
 	}
 	
 	public void addAttendant(Person person){
@@ -33,10 +38,12 @@ public class Trip {
 	}
 	
 	public void printAttendees(){
-		String out = "Attending:";
-		for (int i=0; i==attendees.size(); i++) {
-			out += attendees.get(i).toString();
+		String out = "Attending: ";
+
+		for (Person item: attendees) {
+			Log.v("trip", item);
 		}
+
 		Log.v("trip", out);
 	}
 

@@ -1,7 +1,7 @@
-- Herencia
+X Herencia
 - Genericos
 - Fast numeration
 - InnerClasses
 - Try, catch
 - Polimorfismo
-- Sobreescritura de métodos
+X Sobreescritura de métodos

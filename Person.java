@@ -6,6 +6,7 @@ public class Person {
 	
 	public Person(String nameArg) {
 		name = nameArg;
+		return self;
 	}
 
 
@@ -16,15 +17,6 @@ public class Person {
 
 	public void setName(String name) {
 		this.name = name;
-	}
-
-
-	/**
-	 * @param args
-	 */
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
 	}
 
 }
